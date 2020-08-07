@@ -45,6 +45,6 @@ def printClosest(arr, n, x):
             l += 1
           
     print('{} {}'.format(arr[res_l], arr[res_r]))
-x=int(input())
+n,x=map(int,input().split())
 arr=list(map(int,input().split()))
-printClosest(arr,x,0)
+printClosest(arr,n,x)
