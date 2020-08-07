@@ -1,12 +1,14 @@
 """
 Given an array of n integers, find the nearest smaller number for every element such that the smaller element is on left side.
 
+If no such element exit print -1
+
 Input:
 Firstline indicates integer n
 Second line contains the elements of array
 
 Output:
-print the closest element for each element in its left side
+print the closest smaller element for each element in its left side
 
 Examples:
 
