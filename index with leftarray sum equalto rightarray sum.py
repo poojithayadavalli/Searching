@@ -2,6 +2,8 @@
 
 Given, an array of size n. Find an element which divides the array in two sub-arrays with equal sum.
 
+Print -1 if no such index exists.
+
 Input:
 Firstline indicates the integer n
 Secondline consists of elements of array
@@ -28,7 +30,7 @@ Explanation : If 1 is the partition,
  Subarrays are : {2, 3, 4} and {4, 5}
  
  """
- def findElement(arr, size) : 
+def findElement(arr, size) : 
   
     right_sum, left_sum = 0, 0
     for i in range(1, size) : 
@@ -46,5 +48,6 @@ Explanation : If 1 is the partition,
     return -1
 n=int(input())
 arr=list(map(int,input().split()))
-findElement(arr,n)
+print(findElement(arr,n))
+
 
