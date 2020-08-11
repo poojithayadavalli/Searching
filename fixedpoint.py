@@ -38,12 +38,12 @@ Examples:
   Output:
   -1
   
-  """"
-  def fp(arr, n): 
-    for i in range(n): 
-        if arr[i] is i: 
-            return i
-    return -1
+  """
+def fp(arr, n):
+  for i in range(n):
+    if arr[i] is i:
+      return i
+  return -1
 n=int(input())
 arr=list(map(int,input().split()))
 print(fp(arr,n))
