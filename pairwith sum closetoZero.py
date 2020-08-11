@@ -1,6 +1,6 @@
 """
 
-Given a sorted array with n integer and a number x, find a pair in array whose sum is closest to x.
+Given a sorted array with n integer and a number x, The task is to find a pair in array whose sum is closest to x.
 
 Input:
 Firstline indicates the integer n and integer x
