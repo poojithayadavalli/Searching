@@ -1,6 +1,8 @@
 """
 
-Given an array, we partition a row of numbers A into at most K adjacent (non-empty) groups, then the score is the sum of the average of each group. What is the maximum score that can be scored?
+Given an array, we partition a row of numbers A into at most K adjacent (non-empty) groups, then the score is the sum of the average of each group.
+
+What is the maximum score that can be scored?
 
 Examples:
 
@@ -19,7 +21,7 @@ Input :
 1 2 3 4 5 6 7
 
 Output :
-20.5
+20
 Explanation : We can partition A into [1, 2, 3, 4], [5], [6], [7]. The answer is 2.5 + 5 + 6 + 7 = 20.5
 
 """
@@ -40,7 +42,7 @@ def largeSumAvg(A, K):
             for j in range(i + 1, n):  
                 dp[i] = max(dp[i], (pre_sum[j] - pre_sum[i]) / (j - i) + dp[j]) 
       
-    return dp[0]
+    return int(dp[0])
 
 n,k=map(int,input().split())
 arr=list(map(int,input().split()))
