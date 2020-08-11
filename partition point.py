@@ -43,7 +43,7 @@ def Xor_Sum(arr, n):
         if (PrefixXor[i] + (PrefixXor[n - 1] ^PrefixXor[i]) > sum1):  
             sum1 = PrefixXor[i] +(PrefixXor[n - 1] ^ PrefixXor[i])
             index = i
-            print(sum1,i)
+            #print(sum1,i)
     return index + 1
 n=int(input())
 arr=list(map(int,input().split()))
