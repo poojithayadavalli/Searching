@@ -6,6 +6,8 @@ where the sum of subarray elements is strictly greater than the sum of remaining
 Input:
 First line contains integer N
 Second line contains elements of array
+Output:
+Print count of subarrays with sum greater than the remaining element sum
 Examples:
 Input:
 5
@@ -42,10 +44,10 @@ def Count(arr, n) :
     count = 0
     for i in range(n) : 
         total_sum += arr[i]
-    for i in range(n) : 
+    for i in range(n-1) : 
         subarray_sum = 0
         for j in range(i, n) :  
-            subarray_sum += arr[j];  
+            subarray_sum += arr[j] 
             remaining_sum = total_sum - subarray_sum 
             if (subarray_sum > remaining_sum) : 
                 count += 1 
