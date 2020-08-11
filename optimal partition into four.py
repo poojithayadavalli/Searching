@@ -68,7 +68,7 @@ def findInd(arr, n):
                 index_1 = l 
                 index_2 = index 
                 index_3 = r 
-    print(index_1,"", index_2,"", index_3)
+    print(index_1, index_2, index_3)
 n=int(input())
 arr=list(map(int,input().split()))
 findInd(arr,n)
